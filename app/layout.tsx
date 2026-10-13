@@ -1,17 +1,16 @@
 import type { Metadata } from "next";
-import { Oswald } from "next/font/google";
-import localFont from "next/font/local";
+import { Arimo, Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
-const oswald = Oswald({
+const arimo = Arimo({
   variable: "--font-family",
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin", "cyrillic"], 
 });
 
-const bitcountInk = localFont({
-  src: "../public/fonts/BitcountInk.ttf",
+const pressStart2P = Press_Start_2P({
   variable: "--second-family",
-  display: "swap",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -25,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="uk" className={`${oswald.variable} ${bitcountInk.variable}`}>
+    <html lang="uk" className={`${arimo.variable} ${pressStart2P.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );
