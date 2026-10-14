@@ -19,7 +19,7 @@
 }
 
 .videoCropContainer {
-  width: 400px;
+  width: 365px;
   height: 220px;
   overflow: hidden;
   position: relative;
@@ -157,8 +157,8 @@
   }
 
   .projectsBtn:hover {
-    color: var(--main-color);
-    border: 3px solid var(--white);
+    color: var(--hover);
+    border: 3px solid var(--hover);
   }
 
   .servicesBtn:hover {
