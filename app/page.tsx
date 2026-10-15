@@ -1,6 +1,7 @@
 import Link from "next/link"
 import css from "./page.module.css"
 
+
 const HomePage = () => {
   return (
     <div className={css.container}>
@@ -31,10 +32,10 @@ const HomePage = () => {
 
         <div className={css.btnGroup}>
           <Link className={css.projectsBtn} href="/projects">
-            Our Cases
+            OUR CASES
           </Link>
           <Link className={css.servicesBtn} href="/services">
-            What We Build
+            WHAT WE BUILD
           </Link>
         </div>
       </div>
